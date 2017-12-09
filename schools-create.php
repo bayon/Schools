@@ -16,7 +16,7 @@ function sinetiks_schools_create() {
         $message.="School inserted";
     }
     ?>
-    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/sinetiks-schools/style-admin.css" rel="stylesheet" />
+    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/Schools/style-admin.css" rel="stylesheet" />
     <div class="wrap">
         <h2>Add New School</h2>
         <?php if (isset($message)): ?><div class="updated"><p><?php echo $message; ?></p></div><?php endif; ?>

@@ -18,14 +18,14 @@ function sinetiks_schools_update() {
 //delete
     else if (isset($_POST['delete'])) {
         $wpdb->query($wpdb->prepare("DELETE FROM $table_name WHERE id = %s", $id));
-    } else {//selecting value to update	
+    } else {//selecting value to update
         $schools = $wpdb->get_results($wpdb->prepare("SELECT id,name from $table_name where id=%s", $id));
         foreach ($schools as $s) {
             $name = $s->name;
         }
     }
     ?>
-    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/sinetiks-schools/style-admin.css" rel="stylesheet" />
+    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/Schools/style-admin.css" rel="stylesheet" />
     <div class="wrap">
         <h2>Schools</h2>
 
