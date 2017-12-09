@@ -5,6 +5,7 @@ Description:
 Version: 1
 Author: sinetiks.com
 Author URI: http://sinetiks.com
+GitHub Plugin URI: https://github.com/bayon/Schools
 */
 // function to create the DB / Options / Defaults					
 function ss_options_install() {
