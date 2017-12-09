@@ -11,7 +11,7 @@ function sinetiks_schools_create() {
         $wpdb->insert(
                 $table_name, //table
                 array('id' => $id, 'name' => $name), //data
-                array('%s', '%s') //data format			
+                array('%s', '%s') //data format
         );
         $message.="School inserted";
     }
@@ -25,11 +25,11 @@ function sinetiks_schools_create() {
             <table class='wp-list-table widefat fixed'>
                 <tr>
                     <th class="ss-th-width">ID</th>
-                    <td><input type="text" name="id" value="<?php echo $id; ?>" class="ss-field-width" /></td>
+                    <td><input type="text" name="id" value="<?php echo $id; ?>" class="xss-field-width full-width" /></td>
                 </tr>
                 <tr>
                     <th class="ss-th-width">School</th>
-                    <td><input type="text" name="name" value="<?php echo $name; ?>" class="ss-field-width" /></td>
+                    <td><input type="text" name="name" value="<?php echo $name; ?>" class="xss-field-width full-width" /></td>
                 </tr>
             </table>
             <input type='submit' name="insert" value='Save' class='button'>
