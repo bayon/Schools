@@ -1,4 +1,4 @@
-.widefat {width: auto;}
+.widefat {width: auto;border:dotted 1px #ccc;}
 .ss-list-width {min-width:10%}
 .ss-form-width {width:100%}
 .ss-th-width {width:25%}
